@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yelpington</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="title-bar"><a href="index.html">
+        <h1>Yelpingt<img class="logo-text" src="images/o.png" />n</h1>
+      </a></div>
+    </header>
+    <main>
+      <aside id="sidebar">
+        <ul id="rest-info">
+          <img id="rest-image" src="https://picsum.photos/400/200?random=1">
+            <li id="rest-name" class="info-item"></li>
+            <li id="rest-address" class="info-item"></li>
+            <li id="rest-phone" class="info-item"></li>
+            <li id="rest-website" class="info-item"></li>
+            <li id="rest-hours" class="info-item"></li>
+            <li id="notes-header" class="info-item"><strong>What Users Say:</strong></li>
+            <ul id="rest-notes" class="info-item"></ul>
+        </ul>
+      </aside>
+      <div id="mapid"></div>
+    </main>
+    <script src="/restaurant.js"></script>
+  </body>
+</html>
