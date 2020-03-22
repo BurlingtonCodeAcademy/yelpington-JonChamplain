@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Montserrat:400,600&display=swap");
+
+body {
+    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(254, 252, 237);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #d3442b;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+    padding-left: 3vw;
+    list-style-type: none;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+#title-bar {
+   
+    position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 250, 104);
+  height: 8vh;
+  width: 100%;
+  margin: 0 0 8vh 0;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 3vw;
+  padding-bottom: 5px;
+  color: #d3442b;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+.logo-text {
+  padding-top: 0.45rem;
+  height: 1.6rem;
+  padding-right: .1rem;
+}
+
+main {
+  padding-top: 8vh;
+  display: flex;
+  padding-bottom: 200px;
+}
+
+footer {
+    /* background-color:  rgb(255, 255, 187); */
+    height: 25vh;
+}
+
+#sidebar {
+    width: 50vw;
+    padding: 0 20px 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#rest-list {
+    align-items: left;
+    text-decoration: none;
+    padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #d3442b;
+    width: 90%;
+    font-weight: 600;
+}
+
+.rest-list-item {
+  background-color: white;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border: 1px rgb(223, 223, 223) solid;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 2vw;
+}
+
+.rest-image {
+  justify-self: flex-start;
+  border-radius: 5px;
+  width: 10vw;
+}
+
+.rest-list-item-info-container {
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rest-list-item-name {
+  font-size: 1.2rem;
+ }
+
+.rest-list-item-address {
+  color: rgb(140, 140, 140);
+  font-weight: lighter;
+  font-size: .8rem;
+}
+
+.rest-list-item-note {
+  color: rgb(104, 104, 104);
+  font-size: .7rem;
+  font-weight: lighter;
+}
+
+#rest-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-decoration: none;
+  padding-left: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  color: #d3442b;
+  width: 47vw;
+  font-weight: 600;
+}
+
+#rest-image {
+  width: 40vw; 
+  margin-bottom: 1vh;
+  border-radius: 10px;
+}
+
+#rest-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #d3442b;
+  margin-bottom: 0;
+}
+
+#rest-address {
+  font-size: .9rem;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+#rest-phone {
+  font-size: .8rem;
+  margin-bottom: 4vh;
+}
+
+#rest-website {
+  font-size: .8rem;
+  margin-bottom: 4vh;
+}
+
+#rest-hours {
+  font-size: .8rem;
+  margin-bottom: 4vh;
+}
+
+#notes-header {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+#rest-notes {
+  padding: 0;
+  font-size: .8rem;
+}
+
+.rest-note {
+  max-width: 300px;
+  padding: 1.5vh 1vw;
+  font-size: .9rem;
+  background-color: rgb(217, 236, 243);
+  border-radius: 10px;
+  margin: 20px 15px 0 15px;
+  border: 1px rgb(225, 225, 225) solid;
+}
+
+.rest-link {
+  color: blue;
+}
+
+.info-item {
+  margin: 10px 0;
+  width: 45vw;
+  color: black;
+  font-weight: lighter;
+  font-size: .7rem;
+}
+
+#mapid {
+    position: fixed;
+    height: 92vh;
+    width: 50vw;
+    left: 50vw;
+    top: 8vh;
+  }
+
+.leaflet-popup-content {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #d3442b;
+}
+
+/* .leaflet-popup-content-wrapper {
+  background-color: rgb(255, 253, 232);
+} */
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .rest-list-item-name {
+    font-size: 1rem;
+   }
+  
+  main {
+    flex-direction: column-reverse;
+  }
+
+  #sidebar {
+    padding-top: 40vh;
+    width: 100vw;
+    height: 60vh;
+  }
+
+  #mapid {
+    position: fixed;
+    height: 40vh;
+    width: 100vw;
+    top: 8vh;
+    left: 0vw;
+  }
+
+  #rest-image {
+    width: 95%;
+  }
+
+  #rest-info {
+    width: 90%;
+  }
+
+  .info-item {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .rest-link {
+    width: 80vw;
+  }
+
+  .rest-note {
+    width: 60vw;
+    font-size: .8rem;
+  }
+
+  .rest-image {
+    width: 20vw;
+    margin-bottom: 1rem;
+  }
+
+  .rest-list-item-name {
+    font-size: .8rem;
+  }
+
+  #rest-name {
+    font-size: 1.2rem;
+    margin-bottom: .1rem;
+  }
+
+  #rest-address {
+    margin-top: 0;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  #rest-phone {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  #rest-website {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  #rest-hours {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  #notes-header {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+  }
+
+}
